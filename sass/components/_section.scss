@@ -1,0 +1,20 @@
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    &--bg-grey{
+        background-color: $primaryColorBg;
+    }
+    &--bottom {
+        padding-top: 0;
+    }
+}
+
+.section__title {
+    margin-bottom: 50px;
+    font-weight: $boldFontWeight;
+    font-size: $titleFontSize;
+    line-height: 1.17;
+    text-align: center;
+    color: $secondaryColorText;
+}

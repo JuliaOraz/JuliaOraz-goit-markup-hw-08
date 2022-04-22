@@ -1,0 +1,44 @@
+// Цвета
+$primaryColorText: #757575;
+$secondaryColorText: #212121;
+$accentColor: #2196f3;
+$accentColorHover: #188ce8;
+$overlayBgHover: rgba(33, 150, 243, 0.9);
+$bodyColor: #ffffff;
+$lightColorText: #ffffff;
+$lightIconFill: #ffffff;
+$primaryColorBg: #f5f4fa;
+$logoColor: #000000;
+$headBorderColor: #ececec;
+$darkColorBg: #2f303a;
+$lightColorBg: #c4c4c4;
+$additionalColorText: rgba(255, 255, 255, 0.6);
+$footerFormBorder: rgba(255, 255, 255, 0.3);
+$sectionIconFill:#afb1b8;
+$footerSocialBg: rgba(255, 255, 255, 0.1);
+$areasColorBg: rgba(47, 48, 58, 0.8);
+$backdropBg: rgba(0, 0, 0, 0.2);
+$modalClose: rgba(0, 0, 0, 0.1);
+$inputBorder: rgba(33, 33, 33, 0.2);
+$formPlaceholder:rgba(117, 117, 117, 0.5);
+$portfolioBorder: #eeeeee;
+
+// Шрифт
+$logoFamily: 'Raleway', sans-serif;
+$primaryFamily: 'Roboto', sans-serif;
+
+// Жирность
+$primaryFontWeight: 400;
+$secondaryFontWeight: 500;
+$boldFontWeight: 700;
+
+// Размер
+$primaryFontSize: 14px;
+$secondaryFontSize: 16px;
+$labelFontSize: 12px;
+$titleFontSize: 36px;
+$subtitleFontSize: 18px;
+$logoFontSize: 26px;
+
+// Переход
+$primaryTransition: cubic-bezier(0.4, 0, 0.2, 1);

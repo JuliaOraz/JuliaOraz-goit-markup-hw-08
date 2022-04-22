@@ -1,0 +1,27 @@
+.button {
+    background-color: $accentColor;
+    border: transparent;
+    border-radius: 4px;
+
+    font-family: $primaryFamily;
+    font-weight: $boldFontWeight;
+    font-size: $secondaryFontSize;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: $lightColorText;
+
+    cursor: pointer;
+    transition: background-color 250ms $primaryTransition;
+
+    &:hover,
+    &:focus{
+        background-color: $accentColorHover;
+    }
+}
+
+.button__icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    fill: $lightIconFill;
+}

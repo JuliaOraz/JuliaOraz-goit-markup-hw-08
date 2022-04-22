@@ -1,0 +1,34 @@
+body {
+    font-family: $primaryFamily;
+    font-weight: $primaryFontWeight;
+    font-size: $primaryFontSize;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    color: $primaryColorText;
+    background-color: $bodyColor;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}

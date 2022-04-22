@@ -1,0 +1,85 @@
+.header {
+  border-bottom: 1px solid $headBorderColor;
+}
+.header__container {
+    @extend %verticalCenter;
+}
+.header__nav {
+    @extend %verticalCenter;
+}
+.header__menu {
+  display: flex;
+  margin-left: 93px;
+}
+.header__item{
+    & + &{
+        margin-left: 50px;
+    }
+}
+.header__page {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: $secondaryFontWeight;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: $secondaryColorText;
+
+  transition: color 250ms $primaryTransition;
+
+    &--active{
+        position: relative;
+        color: $accentColor;
+    }
+    &--active::after{
+        content: '';
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        height: 4px;
+        width: 100%;
+        background-color: $accentColor;
+        border-radius: 2px;
+    }
+    &:hover,
+    &:focus{
+        color: $accentColor;
+    }
+}
+.header__contact {
+  display: flex;
+  margin-left: auto;
+}
+.header__link {
+  @extend %verticalCenter;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: $secondaryFontWeight;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: $primaryColorText;
+
+  transition: color 250ms $primaryTransition;
+
+    & + &{
+        margin-left: 50px;
+    }
+
+    &:hover,
+    &:focus {
+        color: $accentColor;
+    }
+}
+.header__icon {
+  margin-right: 10px;
+  fill: currentColor;
+
+  transition: fill 250ms $primaryTransition;
+
+    .header__link:hover &,
+    .header__link:focus & {
+        fill: $accentColor;
+    }
+}

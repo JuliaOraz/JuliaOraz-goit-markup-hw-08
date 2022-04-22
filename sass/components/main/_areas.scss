@@ -1,0 +1,31 @@
+.areas {
+    display: flex;
+}
+
+.areas__item {
+    position: relative;
+
+    & + &{
+        margin-left: 30px;
+    }
+}
+.areas__image {
+    display: block;
+}
+.areas__meta {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    min-height: 70px;
+    @extend %verticalCenter;
+    justify-content: center;
+    background-color: $areasColorBg;
+}
+.areas__subtitle {
+    font-weight: $boldFontWeight;
+    font-size: $primaryFontSize;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $lightColorText;
+}

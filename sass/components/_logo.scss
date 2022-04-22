@@ -1,0 +1,12 @@
+.logo {
+    font-family: $logoFamily;
+    font-weight: $boldFontWeight;
+    font-size: $logoFontSize;
+    line-height: 1.19;
+    text-decoration: none;
+    color: $logoColor;
+}
+
+.logo__part {
+    color: $accentColor;
+}
