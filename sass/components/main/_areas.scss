@@ -1,4 +1,12 @@
-.areas {
+.areas{
+    display: none;
+
+    @media screen and (min-width: $desktop) {
+        display: block;
+    }
+}
+
+.areas__list {
     display: flex;
 }
 
@@ -18,13 +26,14 @@
     left: 0;
     right: 0;
     min-height: 70px;
-    @extend %verticalCenter;
+    display: flex;
+    align-items: center;
     justify-content: center;
     background-color: $areasColorBg;
 }
 .areas__subtitle {
-    font-weight: $boldFontWeight;
-    font-size: $primaryFontSize;
+    font-weight:700;
+    font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
     color: $lightColorText;

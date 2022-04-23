@@ -2,10 +2,12 @@
   border-bottom: 1px solid $headBorderColor;
 }
 .header__container {
-    @extend %verticalCenter;
+    display: flex;
+    align-items: center;
 }
 .header__nav {
-    @extend %verticalCenter;
+    display: flex;
+    align-items: center;
 }
 .header__menu {
   display: flex;
@@ -20,7 +22,7 @@
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-  font-weight: $secondaryFontWeight;
+  font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
@@ -52,10 +54,11 @@
   margin-left: auto;
 }
 .header__link {
-  @extend %verticalCenter;
+  display: flex;
+  align-items: center;;
   padding-top: 32px;
   padding-bottom: 32px;
-  font-weight: $secondaryFontWeight;
+  font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;

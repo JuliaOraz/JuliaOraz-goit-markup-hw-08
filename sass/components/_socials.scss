@@ -1,5 +1,6 @@
 .socials {
     display: flex;
+    justify-content: center;
 }
 .socials__item {
     margin-right: 10px;
@@ -11,7 +12,8 @@
 .socials__link {
     height: 44px;
     width: 44px;
-    @extend %verticalCenter;
+    display: flex;
+    align-items: center;
     justify-content: center;
     background-color: transparent;
     border-radius: 100%;

@@ -1,16 +1,29 @@
 .tabs {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
+        display: inline-flex;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    @media screen and (min-width: $desktop) {
+        margin-bottom: 50px;
+    }
 }
 .tabs__item{
+    
     &:not(:last-child) {
         margin-right: 8px;
+    }
+    @media screen and (max-width: $tablet) {
+        margin-bottom: 15px;
     }
 }
 .tabs__button {
     padding: 6px 22px;
-    font-weight: $secondaryFontWeight;
+    font-weight: 16px;
     line-height: 1.62;
     letter-spacing: 0.03em;
     color: $secondaryColorText;

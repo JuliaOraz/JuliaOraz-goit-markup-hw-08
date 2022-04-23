@@ -1,23 +1,36 @@
 .modal {
     position: absolute;
     top: 50%;
-    left: 50%;
-
-    min-width: 528px;
-    min-height: 581px;
-
+    left: 15px;
+    right: 15px;
+    
     padding: 40px;
-
     background-color: $bodyColor;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-        0px 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-
-    transform: translate(-50%, -50%) scale(1);
+    transform: translateY(-50%) scale(1);
     transition: transform 250ms $primaryTransition;
+    
+    @media screen and (min-width: $mobile) {
+        width: 450px;
+    
+        left: 50%;
+        right: 0;
+    
+        transform: translate(-50%, -50%) scale(1);
+    }
 
+    @media screen and (min-width: $desktop) {
+        width: 528px;
+    }
     .backdrop--hidden>& {
-        transform: translate(-50%, -50%) scale(1.1);
+        transform: translateY(-50%) scale(1.1);
+    
+        @media screen and (min-width: $mobile) {
+            transform: translate(-50%, -50%) scale(1.1);
+        }
     }
 }
 
@@ -26,7 +39,8 @@
     top: 8px;
     right: 8px;
 
-    @extend %verticalCenter;
+    display: flex;
+    align-items: center;
     justify-content: center;
     width: 30px;
     height: 30px;
@@ -49,13 +63,16 @@
     }
 }
 .modal__title {
-    font-weight: $boldFontWeight;
-    $titleFontSize: 20px;
-    font-size: $titleFontSize;
-    line-height: 1.15;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.5;
     text-align: center;
     color: $secondaryColorText;
     margin-bottom: 12px;
+
+    @media screen and (min-width: $desktop) {
+        line-height: 1.15;
+    }
 }
 
 .modal__row {

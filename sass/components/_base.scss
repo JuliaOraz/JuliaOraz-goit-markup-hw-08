@@ -1,12 +1,16 @@
 body {
     font-family: $primaryFamily;
-    font-weight: $primaryFontWeight;
-    font-size: $primaryFontSize;
+    font-weight: 400;
+    font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
 
     color: $primaryColorText;
     background-color: $bodyColor;
+    
+    &.modal_open{
+        overflow: hidden;
+    }
 }
 
 ul {
@@ -26,9 +30,18 @@ ul {
     margin-bottom: 0;
 }
 .container {
-    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+
+    @media screen and (min-width: $mobile) {
+        width: 480px;
+    }
+    @media screen and (min-width: $tablet) {
+        width: 768px;
+    }
+    @media screen and (min-width: $desktop) {
+        width: 1200px;
+    }
 }

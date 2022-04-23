@@ -23,6 +23,13 @@
       <div class="container header__container">
         <nav class="header__nav">
           <a class="logo" href="./index.html"> <span class="logo__part">Web</span>Studio </a>
+          <!-- <button class="mobile_menu" type="button" aria-expanded="false" data-menu-button>
+            <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+              <use href="./images/icons.svg#icon-cross"></use>
+              <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button> 
+          <div data-menu></div>-->
           <ul class="header__menu">
             <li class="header__item">
               <a class="header__page header__page--active" href="./index.html">Студия</a>
@@ -30,12 +37,12 @@
             <li class="header__item">
               <a class="header__page" href="./portfolio.html">Портфолио</a>
             </li>
-            <li class="header__item">
+            <!-- <li class="header__item">
               <a class="header__page" href="">Контакты</a>
-            </li>
+            </li> -->
           </ul>
         </nav>
-        <div class="header__contact">
+        <!-- <div class="header__contact">
           <a class="header__link" href="mailto:info@devstudio.com">
             <svg class="header__icon" width="16" height="12">
               <use href="./images/icons.svg#icon-envelope"></use>
@@ -48,7 +55,7 @@
             </svg>
             +38 096 111 11 11</a
           >
-        </div>
+        </div> -->
       </div>
     </header>
     <!-- Основной контент -->
@@ -112,10 +119,10 @@
         </div>
       </section>
       <!-- Секция Чем мы занимаемся -->
-      <section class="section section--bottom">
+      <section class="section section--bottom areas">
         <h2 class="section__title">Чем мы занимаемся</h2>
         <div class="container">
-          <ul class="areas">
+          <ul class="areas__list">
             <li class="areas__item">
               <img
                 class="areas__image"
@@ -515,6 +522,7 @@
         </form>
       </div>
     </div>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

@@ -1,5 +1,6 @@
 .checkbox {
-    @extend %verticalCenter;
+    display: flex;
+    align-items: center;
     justify-content: center;
 }
 
@@ -16,7 +17,7 @@
 
 .checkbox__icon {
     display: inline-block;
-    margin-right: 9px;
+    margin-right: 8px;
 
     width: 16px;
     height: 16px;
@@ -39,11 +40,30 @@
         border-color: $accentColor;
     }
 }
+.checkbox__text{
+  
+
+    font-size: 12px;
+    line-height: 1.16;
+
+    @media screen and (max-width: 479px) {
+        width: calc(100% - 24px);
+    }
+    @media screen and (min-width: $desktop) {
+        font-size: 14px;
+    }
+}
 .checkbox__link {
     position: relative;
     text-decoration-line: none;
+    font-size: 12px;
+    line-height: 1.16;
 
     color: $accentColor;
+
+    @media screen and (min-width: $desktop) {
+        font-size: 14px;
+    }
 
     &:after {
         content: '';
