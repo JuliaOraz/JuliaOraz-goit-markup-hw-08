@@ -11,6 +11,9 @@ body {
     &.modal_open{
         overflow: hidden;
     }
+    &.menu_open{
+        overflow: hidden;
+    }
 }
 
 ul {
@@ -44,4 +47,10 @@ ul {
     @media screen and (min-width: $desktop) {
         width: 1200px;
     }
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
